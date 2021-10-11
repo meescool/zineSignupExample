@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const request = require("request");
 const https = require("https");
 // import api author name, api key and list id
-const config = require(__dirname + "/config.js");
+const config = require(__dirname + "/configMailChimp.js");
 const myName = config.my_name;
 const apiKey = config.my_api_key;
 const listId = config.my_list_id;
