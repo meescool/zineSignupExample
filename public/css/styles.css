@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+html,
+body {
+  --mainFont: "Share Tech Mono";
+  --yellow: #E4C745;
+  --purple: #6d00bd;
+  --lavender: #DCD6F7;
+  --bluePurple: #A6B1E1;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: var(--lavender);
+  /* background: url("../images/CUTEBUNNY.gif"); */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+  font-family: var(--mainFont);
+}
+
+.content {
+  width: 700px;
+  height: 400px;
+  padding: 15px;
+  margin: 1rem auto;
+  background-color: #fff;
+  border: 5px solid var(--bluePurple);
+  padding: 2rem;
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  background-color: var(--yellow);
+  width: 300px;
+  height: auto;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 400px;
+}
+
+.subsribe-form .checkbox {
+  font-weight: 400;
+}
+
+.content h1 {
+  text-align: center;
+  color: var(--lavender);
+  font-size: 3rem;
+}
+
+.subscribe-control:focus {
+  z-index: 2;
+  outline: none;
+  box-shadow: 1px 1px 10px rgb(0, 0, 0, 0.2);
+}
+
+.subscribe-input {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.subscribe-control {
+  padding: 1rem 0.5rem;
+  background-color: white;
+  font-family: var(--mainFont);
+  border-color: white;
+  border: 3px solid white;
+  box-shadow: inset 1px 1px 10px rgb(0, 0, 0, 0.2);
+}
+
+.top {
+  margin-bottom: -1px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.middle {
+  margin-bottom: -1px;
+  border-radius: 0;
+}
+
+.bottom {
+  margin-bottom: 1px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.subscribe-button {
+  margin: 1rem auto;
+}
+
+.subscribe-button button {
+  width: 400px;
+  font-family: var(--mainFont);
+  font-size: 2rem;
+  background-color: var(--bluePurple);
+  border: 4px solid var(--lavender);
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  color: #fff;
+  transition: color 0.2s, background 0.2s, border 0.2s;
+}
+
+.subscribe-button button:hover {
+  color: var(--bluePurple);
+  border-color: var(--lavender);
+  background-color: #fff;
+}
+
+.noSubscribeWarning {
+  display: none;
+}
+
+.subscribe-warning {
+  background: var(--yellow);
+  padding: 1rem;
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+.subscribe-button .warning {
+  background-color: var(--yellow);
+  border-color: var(--yellow);
+}
+
+.subscribe-button .warning:hover {
+  color: var(--yellow);
+  background-color: #fff;
+  border-color: var(--yellow);
+}
+
+.copy {
+  color: var(--lavender)
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .content {
+    width: 300px;
+    height: 500px;
+    padding: 15px;
+    margin: 1rem auto;
+    background-color: #fff;
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  img {
+    width: 100px;
+    height: auto;
+  }
+
+  .subscribe-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+  }
+
+  .subsribe-form .checkbox {
+    font-weight: 300;
+  }
+
+  .content h1 {
+    text-align: center;
+    color: var(--lavender);
+    font-size: 2rem;
+  }
+
+  .subscribe-control:focus {
+    z-index: 2;
+    outline: none;
+    box-shadow: 1px 1px 10px rgb(0, 0, 0, 0.2);
+  }
+
+  .subscribe-input {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+  }
+
+  .subscribe-control {
+    padding: 1rem 0.5rem;
+    background-color: white;
+    font-family: var(--mainFont);
+    border-color: white;
+    border: 3px solid white;
+    box-shadow: inset 1px 1px 10px rgb(0, 0, 0, 0.2);
+  }
+
+  .top {
+    margin-bottom: -1px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .middle {
+    margin-bottom: -1px;
+    border-radius: 0;
+  }
+
+  .bottom {
+    margin-bottom: 1px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .subscribe-button {
+    margin: 1rem auto;
+  }
+
+  .subscribe-button button {
+    width: 300px;
+    font-family: var(--mainFont);
+    font-size: 2rem;
+    background-color: var(--bluePurple);
+    border: 4px solid var(--lavender);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    color: #fff;
+    transition: color 0.2s, background 0.2s, border 0.2s;
+  }
+
+  .subscribe-button button:hover {
+    color: var(--bluePurple);
+    border-color: var(--lavender);
+    background-color: #fff;
+  }
+
+  .noSubscribeWarning {
+    display: none;
+  }
+
+  .subscribe-warning {
+    background: var(--yellow);
+    padding: 1rem;
+    color: #fff;
+    font-size: 0.8rem;
+  }
+
+  .subscribe-button .warning {
+    background-color: var(--yellow);
+    border-color: var(--yellow);
+  }
+
+  .subscribe-button .warning:hover {
+    color: var(--yellow);
+    background-color: #fff;
+    border-color: var(--yellow);
+  }
+
+  .copy {
+    color: var(--lavender)
+  }
+}

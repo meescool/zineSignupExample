@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A page for signing up people to a zine subscription">
+  <title>Zine Subscription</title>
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <main class="content">
+    <img class="" src="images/selfieColor.jpg" alt="Illustration of a femme person">
+    <form class="subscribe-form" action="/" method="POST">
+
+      <h1 class="">Subscribe to my zines!</h1>
+
+      <div class="subscribe-input">
+        <input type="text" name="first" class="subscribe-control top" placeholder="First Name" autofocus autocomplete="none">
+        <input type="text" name="last" class="subscribe-control middle" placeholder="Last Name" autocomplete="none">
+        <input type="email" name="email" class="subscribe-control bottom" placeholder="Email" autocomplete="on">
+      </div>
+
+      <div class="subscribe-button">
+        <!-- this is a warning, am trying to add js so that it doesnt submit if there are errors -->
+        <p id="subscribeWarning" class="noSubscribeWarning">
+          There needs to be an @ for email input
+        </p>
+        <button id="subscribeButton" class="" type="submit">subscribe!</button>
+      </div>
+
+
+
+
+
+      <p class="copy">&copy; Meescool.com</p>
+    </form>
+  </main>
+
+  <script src="scripts/index.js">
+  </script>
+
+
+</body>
+
+</html>
